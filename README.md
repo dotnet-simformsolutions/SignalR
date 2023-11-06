@@ -1,4 +1,5 @@
-![image](https://github.com/jil1710/readmedemo/assets/125335932/782581e1-a387-400a-864e-08927b0f537f)
+
+<img src="/images/280665125-782581e1-a387-400a-864e-08927b0f537f.png" width="250px" height="200px"/>
 
 # SignalR Asp.Net Core
 
@@ -21,7 +22,7 @@
 
     Hubs provide a High level API for the client and server to call each other's method. It will be very familiar to those developers who have worked on remote invocation APIs. If you have multiple types of messages that you want to send between a server and a client then it is recommended to use Hubs so you don't need to do your own dispatching. You can create an application either using Hubs or a Persistent connection; the only concern is, with Hubs it will be easy to implement.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/419e5d84-2302-414d-987f-3478120d5137)
+    ![image](/images/280659584-419e5d84-2302-414d-987f-3478120d5137.png)
 
 
 ## Why we use SignalR?
@@ -49,9 +50,9 @@
 
 - Afterward, add a signalr hub. A hub is the central point in an ASP.NET Core application through which all SignalR communication is routed. Create a hub for your notification application by adding a class named Chat that inherits from `Microsoft.AspNetCore.SignalR.Hub`
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/c1e30f06-0188-4fc6-a7e0-71fe7a545a3c)
+  ![image](/images/280664178-c1e30f06-0188-4fc6-a7e0-71fe7a545a3c.png)
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/2ce0a620-ea2a-4103-a230-dc5488c516a0)
+  ![image](/images/280664336-2ce0a620-ea2a-4103-a230-dc5488c516a0.png)
 
 - The code snippet above demonstrates how to use three different hub methods:
 
@@ -65,9 +66,9 @@
  
 - After that register the hub to DI as a service and also add it to middleware pipeline :
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/3b6e71ee-32e0-4ea9-96d6-b05f88bb0aad)
+  ![image](/images/280666686-3b6e71ee-32e0-4ea9-96d6-b05f88bb0aad.png)
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/a7631c7c-c954-406f-8223-99ee3157d933)
+  ![image](/images/280666742-a7631c7c-c954-406f-8223-99ee3157d933.png)
 
 
 - Now we are invoke the hub method or event from client side or server side. To use the hub from client side install or add signalr.js cdn link to the page. To download a SignalR module using a node package manager.
@@ -83,34 +84,34 @@
 
 - The final step is to add some JavaScript to build and start a HubConnection. Add a function to execute when newMessage is invoked. Also add some code to invoke SendNotificationToAll, SendNotificationToClient etc.. on the server to send a new chat message.
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/22f7b894-3e3f-4125-abd3-7491854cb622)
+  ![image](/images/280669466-22f7b894-3e3f-4125-abd3-7491854cb622.png)
 
 
 - **Let's see demo of the application**
 
   - First of all login with two different users in different tabs see in below image :
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/f9738e2a-0a4e-494a-b785-70e0364ad683)
+  ![image](/images/280607876-f9738e2a-0a4e-494a-b785-70e0364ad683.png)
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/6347a538-0e48-48c3-9bf9-887e5346d0f7)
+  ![image](/images/280608390-6347a538-0e48-48c3-9bf9-887e5346d0f7.png)
 
   - Here i use sql table dependency so when notification table changes i trigger hub method's. So below is the notification sent to IT employees. means sent message to Group
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/5e77b0ca-43a8-4355-94ae-fa81b01e8265)
+  ![image](/images/280609146-5e77b0ca-43a8-4355-94ae-fa81b01e8265.png)
 
-  - Ria sent the message to Janvi means Send message to client
+  - Ria sent the message to Janvi means Send message to particular client
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/f1cd4e9d-3528-4c2a-b48e-f5eb6977b239)
+  ![image](/images/280609745-f1cd4e9d-3528-4c2a-b48e-f5eb6977b239.png)
 
   - Sent General message to all client who is connected to hub
   
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/8a0cd490-53fc-41af-a12c-87684de07067)
+  ![image](/images/280609953-8a0cd490-53fc-41af-a12c-87684de07067.png)
 
 
   - Change into Notification table to whom you want to sent notification ..
 
   
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/900963bd-d9f0-41c1-9a5c-628a0c0a48e2)
+    ![image](/images/280675262-900963bd-d9f0-41c1-9a5c-628a0c0a48e2.png)
 
 
 
